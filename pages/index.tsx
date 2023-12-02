@@ -1,3 +1,4 @@
+import Billboard from "@/components/Billboard";
 import Navbar from "@/components/Navbar";
 import useCurrentUser from "@/hooks/useCurrentUser";
 import { type NextPageContext } from "next"
@@ -26,6 +27,7 @@ const { data: user } = useCurrentUser();
   return (
     <>
       <Navbar />
+      <Billboard />
     </>
   )
 }
