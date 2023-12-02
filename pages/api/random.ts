@@ -27,7 +27,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         if (error instanceof Error) {
             return res.status(500).json({ error: error.message });
         }
-        return res.status(500).json({ error: 'An unknown error occurred' });
+        return res.status(500).end();
     }
 
 }
