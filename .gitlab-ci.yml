@@ -19,7 +19,7 @@ publish:
   tags:
     - gitlab-org-docker
   rules:
-    - if: '$CI_COMMIT_REF_NAME == "main"'
+    - if: '$CI_COMMIT_REF_NAME == "master"'
     
 deploy_prod:
   stage: deploy
@@ -40,4 +40,4 @@ deploy_prod:
   tags:
     - cloud
   rules:
-    - if: '$CI_COMMIT_REF_NAME == "main"'
+    - if: '$CI_COMMIT_REF_NAME == "master"'
