@@ -20,8 +20,7 @@ publish:
     - gitlab-org-docker
   rules:
     - if: '$CI_COMMIT_REF_NAME == "main"'
-    - if: '$CI_COMMIT_REF_NAME == "dev_deploy"'
-
+    
 deploy_prod:
   stage: deploy
   environment:
