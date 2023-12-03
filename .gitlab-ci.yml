@@ -36,7 +36,7 @@ deploy_prod:
     - ssh -i $ID_RSA_CLOUD -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_IP "docker login -u $CI_REGISTRY_USER -p $CI_JOB_TOKEN $CI_REGISTRY"
     - ssh -i $ID_RSA_CLOUD -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_IP "docker pull $TAG_COMMIT"
     - ssh -i $ID_RSA_CLOUD -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_IP "docker container rm -f netflix-clone || true"
-    - ssh -i $ID_RSA_CLOUD -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_IP "docker run -d -p 3030:3000 --name netflix-clone -e DATABASE_URL=$DATABASE_URL -e GITHUB_ID=$GITHUB_ID -e GITHUB_SECRET=$GITHUB_SECRET -e GOOGLE_CLIENT_ID=$GOOGLE_CLIENT_ID -e GOOGLE_CLIENT_SECRET=$GOOGLE_CLIENT_SECRET $TAG_COMMIT"
+    - ssh -i $ID_RSA_CLOUD -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_IP "docker run -d -p 3030:3000 --name netflix-clone -e DATABASE_URL=$DATABASE_URL -e GITHUB_ID=$GITHUB_ID -e GITHUB_SECRET=$GITHUB_SECRET -e GOOGLE_CLIENT_ID=$GOOGLE_CLIENT_ID -e GOOGLE_CLIENT_SECRET=$GOOGLE_CLIENT_SECRET -e NEXTAUTH_JWT_SECRET=$NEXTAUTH_JWT_SECRET -e NEXTAUTH_SECRET=$NEXTAUTH_SECRET $TAG_COMMIT"
   tags:
     - cloud
   rules:
