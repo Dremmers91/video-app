@@ -3,7 +3,7 @@ import Input from "@/components/input";
 import { useCallback, useState } from "react";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/router";
-import { FcGoogle } from "react-icons/fc";
+import { FcGoogle, FcInfo } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
 
 const Auth = () => {
@@ -47,10 +47,15 @@ const Auth = () => {
         <div className="realtive h-full w-full bg-[url('/images/hero.jpg')] bg-no-repeat bg-center bg-fixed bg-cover">
             <div className="bg-black w-full h-full md:bg-opacity-50">
                 <nav className="px-12 py-5">
-                    <img src="/images/logo.png" alt="Logo" className="h-12" />
+                    {/* <img src="/images/logo.png" alt="Logo" className="h-12" /> */}
                 </nav>
                 <div className="flex justify-center">
-                    <div className="bg-black bg-opacity-70 px-16 py-16 self-center mt-2 lg:w-2/5 md:max-w-md rounded-md w-full">
+                    <div className="bg-black bg-opacity-70 px-16 pt-12 pb-16 self-center mt-2 lg:w-2/5 md:max-w-md rounded-md w-full">
+                        <div className="mb-6 rounded-md bg-purple-800 bg-opacity-50 py-2 px-1">
+                            <p className="text-white text-center">
+                                Built in react for educational purposes
+                            </p>
+                        </div>
                         <h2 className="text-white text-4xl mb-8 font-semibold">
                             {variant === 'login' ? 'Sign in' : 'Register'}
                         </h2>
@@ -90,7 +95,7 @@ const Auth = () => {
                             </div>
                         </div>
                         <p className="text-neutral-500 mt-12">
-                            {variant === 'login' ? 'First time using Netflix?' : 'Already have an account?'}
+                            {variant === 'login' ? 'First time?' : 'Already have an account?'}
                             <span onClick={toggleVariant} className="text-white ml-1 hover:underline cursor-pointer">
                                 {variant === 'login' ? 'Create and account' : 'Login'}
                             </span>
