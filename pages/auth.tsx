@@ -53,7 +53,7 @@ const Auth = () => {
                     <div className="bg-black bg-opacity-70 px-16 pt-12 pb-16 self-center mt-2 lg:w-2/5 md:max-w-md rounded-md w-full">
                         <div className="mb-6 rounded-md bg-purple-800 bg-opacity-50 py-2 px-1">
                             <p className="text-white text-center">
-                                Built in react for educational purposes
+                                Built for educational purposes
                             </p>
                         </div>
                         <h2 className="text-white text-4xl mb-8 font-semibold">
