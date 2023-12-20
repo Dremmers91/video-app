@@ -52,9 +52,10 @@ const Auth = () => {
                 <div className="flex justify-center">
                     <div className="bg-black bg-opacity-70 px-16 pt-12 pb-16 self-center mt-2 lg:w-2/5 md:max-w-md rounded-md w-full">
                         <div className="mb-6 rounded-md bg-purple-800 bg-opacity-50 py-2 px-1">
-                            <p className="text-white text-center">
-                                Built for educational purposes
-                            </p>
+                            <p className="text-white text-center">Built for educational purposes</p>
+                            <p className="text-white text-center">Demo Login:</p>
+                            <p className="text-white text-center">demo@email.com</p>
+                            <p className="text-white text-center">demo</p>
                         </div>
                         <h2 className="text-white text-4xl mb-8 font-semibold">
                             {variant === 'login' ? 'Sign in' : 'Register'}
