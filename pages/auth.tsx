@@ -48,14 +48,13 @@ const Auth = () => {
             <div className="bg-black w-full h-full md:bg-opacity-50">
                 <nav className="px-12 py-5">
                     {/* <img src="/images/logo.png" alt="Logo" className="h-12" /> */}
+                    <p className="text-white text-left">Built for educational purposes</p>
                 </nav>
                 <div className="flex justify-center">
                     <div className="bg-black bg-opacity-70 px-16 pt-12 pb-16 self-center mt-2 lg:w-2/5 md:max-w-md rounded-md w-full">
-                        <div className="mb-6 rounded-md bg-purple-800 bg-opacity-50 py-2 px-1">
-                            <p className="text-white text-center">Built for educational purposes</p>
-                            <p className="text-white text-center">Demo Login:</p>
-                            <p className="text-white text-center">demo@email.com</p>
-                            <p className="text-white text-center">demo</p>
+                        <div className="mb-6 rounded-md bg-purple-800 bg-opacity-50 py-2 px-2">
+                            <p className="text-white text-left text-sm">Email: demo@email.com</p>
+                            <p className="text-white text-left text-sm">Pass: demo</p>
                         </div>
                         <h2 className="text-white text-4xl mb-8 font-semibold">
                             {variant === 'login' ? 'Sign in' : 'Register'}
