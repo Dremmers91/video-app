@@ -2,6 +2,8 @@
 
 This is a repository for a FullStack Netflix Clone tutorial using React, NextJS, TailwindCSS & Prisma.
 
+Demo: https://video-app-snowy-beta.vercel.app/auth
+
 Features:
 
 - Environment, Typescript, NextJS Setup
@@ -13,3 +15,5 @@ Features:
 - Detail-oriented effects and animations using TailwindCSS
 - React SWR data fetching
 - Zustand state management
+
+# This was built for educational purposes
